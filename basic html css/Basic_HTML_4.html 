@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<style>
+		.font_1 {
+			background-color:black;
+			color:yellow;
+			font-size:larger;
+		}
+		.font_2 {
+			background-color:darkblue;
+			color:white;
+			font-size:medium;
+		}
+	</style>
+	<h2 class="font_1">In 1828, Ányos Jedlik, a Hungarian who invented an early type </h2>
+	<h3 class="font_2">Whether steam cars will ever be reborn in later technologica</h3>
+	<h4 class="font_2">Sources point to different creations as the first electric car</h4>
+</body>
+</html>
