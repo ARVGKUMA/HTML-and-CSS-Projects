@@ -4,11 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ENGINEERING | TYPES </title>
+
+    <link rel="stylesheet" type="text/css" href="./one_page.css">
+    <script src="js/one_page.js"></script>
 </head>
 <body>
-	<!--NAV-->
-	<div>
-		<div>
+    <div>
+        <div>
 			<ul>
 				<a href="#home"><li>HOME</li></a>
 				<a href="#illustrations"><li>ILLUSTRATIONS</li></a>
@@ -50,7 +52,7 @@
 
 			<div>
 				<div>
-					<img src="./images/thumbnail_11.jpg"alt="" width="700" height="500">
+					<img src="./images/thumbnail_11 .jpg"alt="" width="700" height="500">
 					<div>
 						<p>Civil engineering plays a vital role in a an Individual life </p>
 					</div>
@@ -103,6 +105,67 @@
 				</div>
 			</div>
 		</section>
+
+        <div class="row">
+            <div class="column">
+                <img src="./thumbnail_10small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="./thumbnail_11 small .jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="./thumbnail_12 small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+
+        <!--the modal/light box-->
+        <div id ="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1/3</div>
+                    <img src="./images/thumbnail_10.jpg" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2/3</div>
+                    <img src="./images/thumbnail_11 .jpg" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3/3</div>
+                    <img src="./images/thumbnail_12.jpg" style="width: 100%;">
+                </div>
+
+                <!---Next/previous controls-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!--caption text -->
+
+                <div class="caption-container">
+                    <p id ="caption"></p>
+                </div>
+
+                <!--thumbnail image controls-->
+                <div class="column">
+                    <img class="demo" src="./thumbnail_10small.jpg" onclick="currentSlide(1)" alt="Bridge">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./thumbnail_11 small .jpg" onclick="currentSlide(2)" alt="Bridge">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./thumbnail_12 small.jpg" onclick="currentSlide(3)" alt="Bridge">
+                </div>
+            </div>
+        </div>
 
 <!--CONTACT FORM-->
 <section>
